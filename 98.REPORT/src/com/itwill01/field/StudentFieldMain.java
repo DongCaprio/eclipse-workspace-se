@@ -9,7 +9,7 @@ public class StudentFieldMain {
 		 */
 		Student student1 = new Student();
 		Student student2 = new Student();
-		
+		////////////////////////////////////
 		/*
 		 * 학생객체에기본데이타(번호,이름,국어,영어,수학)대입(2명)
 		 */
