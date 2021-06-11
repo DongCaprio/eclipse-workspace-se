@@ -9,7 +9,6 @@ public class ReferenceTypeArrayMain {
 		Account[] accArray=new Account[5];
 		
 		accArray[0] =new Account(1111, "KIM", 89000, 0.6);
-		
 		accArray[1] =new Account(2222, "LIM", 49000, 0.3); 
 		accArray[2] =new Account(3333, "JIM", 59000, 0.2); 
 		accArray[3] =new Account(4444, "OIM", 99000, 0.1); 

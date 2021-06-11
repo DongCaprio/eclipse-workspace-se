@@ -6,7 +6,6 @@ public class Account {
 	private String owner;//계좌주
 	private int balance;//잔고
 	private double iyul;//이율
-	//private public 차이 알기
 	/*
 	 * 생성자
 	 */
@@ -19,7 +18,7 @@ public class Account {
 		this.balance=balance;
 		this.iyul=iyul;
 	}
-	//
+	
 	
 	/*
 	 * 멤버메쏘드
