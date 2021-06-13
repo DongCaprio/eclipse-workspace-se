@@ -77,7 +77,7 @@ public class ReferenceTypeArrayAccountMain {
 		}
 		System.out.println("99.계좌번호순으로 내림차순정렬[Quiz]");
 
-		for (int j = 0; j < accounts.length-1; j++) {
+		for (int j = 0; j < accounts.length - 1; j++) {
 			for (int i = 0; i < accounts.length - 1 - j; i++) {
 				if (accounts[i].getNo() < accounts[i + 1].getNo()) {
 					Account tmp = accounts[i + 1];
