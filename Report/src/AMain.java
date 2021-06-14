@@ -6,15 +6,19 @@ public class AMain {
 		A aname = new A();
 		A aname2 = new A();
 		
-		aname.setGaga(10);
-		aname.setNana(100);
+		aname.setX(10);
+		aname.setY(100);
 		
-		aname2.setGaga(222);
-		aname2.setNana(2222);
+		aname2.setX(222);
+		aname2.setY(2222);
 		
+		System.out.println(aname.getX());
 		aname.m1();
+		System.out.println(aname2.getY());
 		aname.m2();
+		System.out.println(aname.getX());
 		aname2.m1();
+		System.out.println(aname2.getY());
 		aname2.m2();
 	
 	}
