@@ -9,9 +9,19 @@ public class Account {
 	/*
 	 * 생성자
 	 */
+	/**
+	 * 기본값으로 초기화된 계좌객체생성
+	 */
 	public Account() {
 		// TODO Auto-generated constructor stub
 	}
+	/**
+	 * 매개변수값으로 초기환된 계좌 객체 생성
+	 * @param no 계좌번호
+	 * @param owner 계좌주
+	 * @param balance 잔고
+	 * @param iyul 이율
+	 */
 	public Account(int no,String owner,int balance,double iyul) {
 		this.no=no;
 		this.owner=owner;
