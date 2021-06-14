@@ -36,5 +36,5 @@ public class StudentPrint {
 		System.out.println("---------------학생 성적출력--------------------");
 		System.out.println("학번  이름  국어 영어 수학 총점  평균  평점 석차");
 		System.out.println(" " + no +"   " + name + "  " + kor + "  " + eng + "  " + math + "  " + sum +" "+ avg + "  " + grade + "   "+ rank);
-		System.out.println("---------------------------------------------");
-		
+		System.out.println("---------------------------------------------");}
+}
