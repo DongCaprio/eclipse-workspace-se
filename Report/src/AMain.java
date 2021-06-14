@@ -12,10 +12,10 @@ public class AMain {
 		aname2.setGaga(222);
 		aname2.setNana(2222);
 		
-		aname.printGaGa();
-		aname.printNaNa();
-		aname2.printGaGa();
-		aname2.printNaNa();
+		aname.m1();
+		aname.m2();
+		aname2.m1();
+		aname2.m2();
 	
 	}
 

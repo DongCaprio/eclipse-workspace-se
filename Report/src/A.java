@@ -1,34 +1,34 @@
 
 public class A {
-	private int gaga;
-	private int nana;
+	private int x;
+	private int y;
 	
 	public A() {
 		// TODO Auto-generated constructor stub
 	}
 
 	public int getGaga() {
-		return gaga;
+		return x;
 	}
 
 	public void setGaga(int gaga) {
-		this.gaga = gaga;
+		this.x = gaga;
 	}
 
 	public int getNana() {
-		return nana;
+		return y;
 	}
 
 	public void setNana(int nana) {
-		this.nana = nana;
+		this.y = nana;
 	}
 	
 
-	public void printGaGa() {
-		System.out.println(gaga);
+	public void m1() {
+		System.out.println("m1 호출");
 	}
-	public void printNaNa() {
-		System.out.println(nana);
+	public void m2() {
+		System.out.println("m2 호출");
 	}
 
 }
