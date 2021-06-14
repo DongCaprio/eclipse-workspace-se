@@ -13,12 +13,12 @@ public class AMain {
 		aname2.setY(2222);
 		
 		System.out.println(aname.getX());
-		aname.m1();
 		System.out.println(aname2.getY());
-		aname.m2();
 		System.out.println(aname.getX());
-		aname2.m1();
 		System.out.println(aname2.getY());
+		aname.m1();
+		aname2.m1();
+		aname.m2();
 		aname2.m2();
 	
 	}
