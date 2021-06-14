@@ -13,8 +13,8 @@ public class AMain {
 		aname2.setY(2222);
 		
 		System.out.println(aname.getX());
-		System.out.println(aname2.getY());
-		System.out.println(aname.getX());
+		System.out.println(aname.getY());
+		System.out.println(aname2.getX());
 		System.out.println(aname2.getY());
 		aname.m1();
 		aname2.m1();
