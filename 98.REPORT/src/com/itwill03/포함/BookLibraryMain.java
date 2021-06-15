@@ -20,22 +20,17 @@ public class BookLibraryMain {
 		/*
 		 * 회원이 책들 대여
 		 */
-		
-		
-		
-		 //* 책객체참조변수를 회원의 멤버변수에대입
+
+		// * 책객체참조변수를 회원의 멤버변수에대입
 		/*
 		 * 회원정보출력(회원정보와 회원이 빌린책 정보출력)
 		 */
-		
+
 		Book 책1 = new Book(11, "책1", "1칸", "많이 어렵다");
 		person1.setBorrow(책1);
 		BookMember.head();
 		person1.printBook();
 
-		
-		
-		
 	}
 
 }
