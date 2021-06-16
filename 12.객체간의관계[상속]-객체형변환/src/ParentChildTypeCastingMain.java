@@ -28,7 +28,7 @@ class Parent{
 	}
 	
 	public void method4() {
-		System.out.println("Parent.method4()");
+		System.out.println("Parent.method4패런츠()");
 	}
 	
 	
@@ -36,7 +36,7 @@ class Parent{
 class Child extends Parent{
 	
 	public void method4() {
-		System.out.println("Child.method4()");
+		System.out.println("Child.method차일드()");
 	}
 	public void method5() {
 		System.out.println("Child.method4()");
