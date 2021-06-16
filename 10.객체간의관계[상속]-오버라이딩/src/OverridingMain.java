@@ -16,41 +16,37 @@
  *        		}
  *        }
  */
-class OverrideingParant{
+class OverrideingParant {
+	public OverrideingParant() {
+		System.out.println("기본생성자를 꼭만들어봐요");
+	}
 	public void method1() {
 		System.out.println("OverridingParent.method1()");
 	}
+
 	public void method2() {
 		System.out.println("OverridingParent.method2()");
 	}
 }
-class OverridengChild extends OverrideingParant{
-	
-/*	 public void method1() {
-		System.out.println("OverridingParent.method1()");
-	}
-	public void method2() {
-		System.out.println("OverridingParent.method2()");
-	}          */
-	 
+
+class OverridengChild extends OverrideingParant {
+	/*
+	 * public void method1() { System.out.println("OverridingParent.method1()"); }
+	 * public void method2() { System.out.println("OverridingParent.method2()"); }
+	 */
 	public void method2() {
 		System.out.println("---------OverridingChild에서 재정의된 method2() start------------------");
-		
+
 		System.out.println("---------OverridingChild에서 재정의된 method2() end--------------------");
 		/*
-		 * 재정의하면 
-		 *    -상속받은 method2()는 은폐(호출불가)
-		 *    -자식에서 재정의한 method2() 만 호출된다.
+		 * 재정의하면 -상속받은 method2()는 은폐(호출불가) -자식에서 재정의한 method2() 만 호출된다.
 		 */
 	}
+
 	public void method3() {
 		System.out.println("OverridingChild.method3()");
 	}
-	
-	
 }
-
-
 
 public class OverridingMain {
 
