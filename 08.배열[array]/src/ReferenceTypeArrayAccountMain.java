@@ -89,6 +89,26 @@ public class ReferenceTypeArrayAccountMain {
 		for (int i = 0; i < accounts.length; i++) {
 			accounts[i].print();
 		}
+		System.out.println("88. 계좌이름순으로 오름(내림)차순 정렬");
+		for(int i=0;i<accounts.length-1;i++) {
+			boolean isSwap=false;
+			for(int j=0;j<accounts.length-1-i;j++) {
+				if(accounts[j].getOwner().compareTo(accounts[j+1].getOwner())>0) {
+					Account tempAccount=accounts[j+1];
+					accounts[j+1]=accounts[j];
+					accounts[j]=tempAccount;
+					isSwap=true;
+				}
+			}
+			if(!isSwap) {
+				break;
+			}
+		}
+		Account.headerPrint();
+		for (int i = 0; i < accounts.length; i++) {
+			accounts[i].print();
+		}
+		
 
 		System.out.println("10.5555계좌한개 이율을 3.6으로변경");
 		for (int i = 0; i < accounts.length; i++) {
@@ -107,6 +127,9 @@ public class ReferenceTypeArrayAccountMain {
 				accounts[i].print();
 			}
 		}
-	}
+	
+		
+		
 
+	}
 }
