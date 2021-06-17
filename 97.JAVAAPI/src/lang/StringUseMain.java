@@ -59,10 +59,13 @@ public class StringUseMain {
 			}
 		}
 //		for (int i = 0; i < idArray.length; i++) {
-//			for (int j = 0; j < idArray.length; j++) {
-//				char munja = idArray[i].charAt(j);
-//				if((munja >= 'a' && munja <= 'z') || (munja >= '0' && munja <= '9')) {
+//			for (int j = 0; j < idArray[i].length(); j++) {
+//				int munja = idArray[i].charAt(j);
+//				if((munja >= 'a' && munja <= 'z') || (munja >=48 && munja <= 57)) {
 //					System.out.println(idArray[i]);
+//				}
+//				else {
+//					continue;
 //				}
 //			}
 //			
@@ -106,6 +109,46 @@ public class StringUseMain {
 		System.out.println(fileNameNoExt+"       "+fileExt);
 		String copyFileName = fileNameNoExt+"-복사본."+fileExt;
 		System.out.println(copyFileName);
+		System.out.println("-------------String.startWith,endWith---------------");
+		String fileName2="yyy.jpg";
+		if(fileName2.endsWith("gif") || fileName2.endsWith(".jpg") || fileName2.endsWith(".jpeg")) {
+			System.out.println(fileName2+" 는 이미지파일입니다.");
+		}
+		String[] names = {"김경호","이경호","김미선","이미숙","홍수환","김현미"};
+		int count = 0;
+		for (int i =0; i<names.length; i++) {
+			if(names[i].startsWith("김")) {
+				System.out.println(names[i]+" ");
+				count++;
+			}
+		}
+		String[] kimArray = new String[count];
+		int index=0;
+		for(int i =0; i<names.length;i++) {
+			if(names[i].startsWith("김")) {
+				kimArray[index] = names[i];
+				index++;
+			}
+		}
+		System.out.println("------------kim---------------");
+		for (int i =0;i <kimArray.length;i++) {
+			System.out.println(kimArray[i]);
+		}
+		System.out.println("------------String.trim---------------");
+		String idStr = "      guard       ";
+		System.out.println(idStr.length());
+		System.out.println(idStr.trim()); // 공백제거(중간의 공백은 제거가 안된다)
+		System.out.println(idStr.trim().length());
+		String spaceStr="                   ";
+		if(spaceStr.trim().equals("")) {
+			System.out.println("더블 쿼테이션과 띄어쓰기여러개의.trim()메서드가 같다면 출력");
+		}
+		
+		
+		
+		
+		
+		
 		
 		
 		
