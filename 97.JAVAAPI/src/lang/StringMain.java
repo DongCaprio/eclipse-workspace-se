@@ -40,8 +40,8 @@ public class StringMain {
 		/*
 		 * 
 		 */
-		String irum1 = "홍경호";
-		String irum2 = "김경호";
+		String irum1 = "5";
+		String irum2 = "1";
 		int unicodeGap1 = irum1.compareTo(irum2);
 		System.out.println(unicodeGap1);
 

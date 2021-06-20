@@ -39,7 +39,7 @@ class Child extends Parent{
 		System.out.println("Child.method차일드()");
 	}
 	public void method5() {
-		System.out.println("Child.method4()");
+		System.out.println("Child.method400()");
 	}
 }
 public class ParentChildTypeCastingMain {
@@ -58,9 +58,9 @@ public class ParentChildTypeCastingMain {
 		p1.method2();
 		p1.method3();
 		p1.method4();//재정의메쏘드호출가능
-		/*
-		p1.method5();
-		*/
+		
+		//p1.method5();
+		
 		System.out.println("-----------Parent-->Child-----------------");
 		/*
 		 3. 부모 객체를 자식클래스타입으로 형변환

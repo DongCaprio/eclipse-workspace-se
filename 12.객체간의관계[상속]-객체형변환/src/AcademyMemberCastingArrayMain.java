@@ -25,8 +25,8 @@ public class AcademyMemberCastingArrayMain {
 		 */
 		 AcademyMember am=new AcademyStudent(1,"김","자바");
 		 
-		 boolean isStudent = am instanceof AcademyStudent;
-		 if(isStudent) {
+		 //boolean isStudent = am instanceof AcademyStudent;
+		 if(am instanceof AcademyStudent) {
 			 System.out.println("학생객체-->"+am);
 			 AcademyStudent tempStudent =(AcademyStudent)am;
 			 System.out.println("학생반:"+tempStudent.getBan());

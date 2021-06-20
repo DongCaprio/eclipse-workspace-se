@@ -48,5 +48,11 @@ public class AcademyStudent extends AcademyMember {
 		super.print();
 		System.out.println(this.ban);
 	}
-	
+	public void printBan() {
+		System.out.println(this.ban);
+		
+	}
+	public String toString() {
+		return "나는학생";
+	}
 }
