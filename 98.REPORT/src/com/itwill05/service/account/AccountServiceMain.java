@@ -30,9 +30,6 @@ public class AccountServiceMain {
 		System.out.println("11.AccountService객체야 계좌를 잔고순으로 내림차순정렬해줘");
 		accountService.sortByBalanceDescending();
 		System.out.println("12.AccountService객체야 계좌객체줄께 (이름,잔고,이율) 수정(update)해줘[OPTION]");
-<<<<<<< HEAD
-		accountService.updateAccount(new Account()); //일단 그냥 값이 다 비어있는 객체로 수정
-=======
 		//내꺼 accountService.updateAccount(new Account()); //일단 그냥 값이 다 비어있는 객체로 수정
 		
 		//강사꺼
@@ -45,13 +42,8 @@ public class AccountServiceMain {
 		accountService.updateAccount(updateAccount);
 		accountService.findByNoPrint(2222);
 		
->>>>>>> branch 'master' of https://github.com/DongCaprio/eclipse-workspace-se.git
 		System.out.println("13.AccountService객체야 번호,이름,잔고,이율 계좌 데이타줄께 이름,잔고,이율 수정(update)해줘[OPTION]");
-<<<<<<< HEAD
-		accountService.updateAccount(1234, "NIN", 50000, 10.0);
-=======
 		//내꺼 accountService.updateAccount(1234, "NIN", 50000, 10.0);
->>>>>>> branch 'master' of https://github.com/DongCaprio/eclipse-workspace-se.git
 		
 	}
 }
