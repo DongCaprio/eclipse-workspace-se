@@ -1,5 +1,6 @@
 package com.itwill05.service.account;
 
+import java.util.Iterator;
 
 /*
  * Account객체전체에관련된 업무를 실행할클래스
@@ -39,18 +40,17 @@ public class AccountService {
 	 * 0.계좌객체를 인자로받아서 Account[]에추가[OPTION]
 	*/
 	public void addAccount(Account newAccount) {
-		int xxx = 0;
-		Account[] newAccounts = new Account[xxx];
-		
+		Account[] newAccount1 = new Account[(accounts.length)+1];
+		for (int i = 0; i < accounts.length; i++) {
+			newAccount1[i] = accounts[i]; //크기가 1큰 배열생성 
+		} 
+//		newAccount1[newAccount1.length] = new Account(); 추가는 잘 모르겠다.
 	}
 		/*
 		 * 1.배열크기증가
 		 *   - 기존배열보다큰배열생성
 		 *   - 기존데이타 옮김
 		 */
-	
-	
-	
 	/*
 	 * 0.계좌데이타를 인자로받아서 Account[]에추가[OPTION]
 	*/
@@ -60,7 +60,11 @@ public class AccountService {
 		 *   - 기존배열보다큰배열생성
 		 *   - 기존데이타 옮김
 		 */
-		
+		Account[] newAccount2 = new Account[(accounts.length)+1];
+		for (int i = 0; i < accounts.length; i++) {
+			newAccount2[i] = accounts[i];
+		} //1칸이큰 새로운배열생성하고 기존의 값들 다 복사해서 넣고 세로생긴 마지막 1칸에는 새로 생성하는값 대입
+		newAccount2[newAccount2.length] = new Account(no, owner, balance, iyul);
 	}
 	/*
 	 1.은행계좌들 총계좌수출력메쏘드정의
@@ -200,13 +204,34 @@ public class AccountService {
 	/*
 	12.계좌객체를 인자로 받아서 이름,잔고,이율 수정(update)[OPTION]
 	*/
+	//만약에 계좌객체가 4번 고객자리로의 수정을 원한다면
 	public void updateAccount(Account updateAccount) {
-		
+		for (int i = 0; i < accounts.length; i++) {
+			if(i == 3) {
+				accounts[i]=updateAccount;
+				print();
+				break;
+			}
+			
+		}
 	}
 	/*
 	13.번호,이름,잔고,이율 인자로받아서 계좌객체수정(update)[OPTION]
 	*/
 	public void updateAccount(int no,String owner,int balance,double iyul) {
+		//예를 들어 2번 고객이 바뀐다고 하면
+		//배열의 순서 2번고객의 계좌번호 ~ 이율까지 다 변경
+		for (int i = 0; i < accounts.length; i++) {
+			if(i == 1) {
+				accounts[i].setNo(no);
+				accounts[i].setOwner(owner);
+				accounts[i].setBalance(balance);
+				accounts[i].setIyul(iyul);
+				print();
+				break;
+			}
+		}
 		
+			
+		}
 	}
-}

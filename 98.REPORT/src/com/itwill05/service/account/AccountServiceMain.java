@@ -6,7 +6,7 @@ public class AccountServiceMain {
 	public static void main(String[] args) {
 		AccountService accountService=new AccountService();
 		System.out.println("0.AccountService객체야 Account추가(배열사이즈증가)[OPTION]");
-		
+		accountService.addAccount(new Account(11111, "PARK", 10000, 3.3));
 		System.out.println("1.AccountService객체야 은행계좌들 총계좌수출력해줘");
 		accountService.totAccountNumberPrint();		
 		System.out.println("2.AccountService객체야 은행계좌들 전체출력해줘");
@@ -30,8 +30,9 @@ public class AccountServiceMain {
 		System.out.println("11.AccountService객체야 계좌를 잔고순으로 내림차순정렬해줘");
 		accountService.sortByBalanceDescending();
 		System.out.println("12.AccountService객체야 계좌객체줄께 (이름,잔고,이율) 수정(update)해줘[OPTION]");
-		
+		accountService.updateAccount(new Account()); //일단 그냥 값이 다 비어있는 객체로 수정
 		System.out.println("13.AccountService객체야 번호,이름,잔고,이율 계좌 데이타줄께 이름,잔고,이율 수정(update)해줘[OPTION]");
+		accountService.updateAccount(1234, "NIN", 50000, 10.0);
 		
 	}
 }
