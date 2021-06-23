@@ -89,7 +89,10 @@ public class Student {
 		System.out.printf("%3d %5s %4d %4d %4d %4d %5.1f %3c %4d%n", this.no, this.name, this.kor, this.eng, this.math,
 				this.tot, this.avg, this.grade, this.rank);
 	}
-
+	public int rankPlus() {
+		this.rank=(this.rank+1);
+				return rank;
+	}
 	public int getNo() {
 		return no;
 	}
