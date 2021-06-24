@@ -51,13 +51,12 @@ public class StudentService {
 	public void calculateRank() {
 
 		for (int i = 0; i < students.length; i++) {
-			students[i].calculateTotal();
-			students[i].rankPlus();
+			students[i].setRank(1);
 		}
-		for (int j = 0; j < students.length; j++) {
-			for (int i = 0; i < students.length ; i++) {
-				if (students[j].getTot() < students[i].getTot()) {
-					students[j].rankPlus();
+		for (int i = 0; i < students.length; i++) {
+			for(int j=0;j<students.length;j++) {
+				if(students[i].getTot()< students[j].getTot()) {
+					students[i].setRank(students[i].getRank()+1);
 				}
 			}
 		}
@@ -94,14 +93,13 @@ public class StudentService {
 //		}
 //		return findStudent;
 //	}
-	
 
 	/*
 	 * 5. 학점A인 학생들 반환
 	 */
 	public Student[] returnGradeA(char hakjum) {
 		calculate();
-		//Student[] gradeA = null;
+		// Student[] gradeA = null;
 		int numm = 0;
 		for (int i = 0; i < students.length; i++) {
 			if (students[i].getGrade() == hakjum) {
@@ -109,7 +107,7 @@ public class StudentService {
 			}
 		}
 		Student[] gradeA = new Student[numm];
-		for (int i = 0, j = 0; i < numm; i++) {
+		for (int i = 0, j = 0; i < students.length; i++) {
 			if (students[i].getGrade() == hakjum) {
 				gradeA[j] = students[i];
 				j++;
@@ -117,8 +115,8 @@ public class StudentService {
 		}
 		return gradeA;
 	}
-	
-	//이름이 KIM인 학생들 반환
+
+	// 이름이 KIM인 학생들 반환
 	public Student[] returnName(String name) {
 		int numm = 0;
 		for (int i = 0; i < students.length; i++) {
@@ -127,7 +125,7 @@ public class StudentService {
 			}
 		}
 		Student[] nameWho = new Student[numm];
-		for (int i = 0, j = 0; i < numm; i++) {
+		for (int i = 0, j = 0; i < students.length; i++) {
 			if (students[i].getName().equals(name)) {
 				nameWho[j] = students[i];
 				j++;
@@ -139,12 +137,42 @@ public class StudentService {
 	/*
 	 * 6. 학생석차로 오름차순정렬
 	 */
-	
+
 	public void ola() {
-		//calculateRank();
-		for (int i = 0; i < students.length ; i++) {
-			for (int j = 0; j < students.length -i - 1; j++) {
+		// calculateRank();
+		for (int i = 0; i < students.length; i++) {
+			for (int j = 0; j < students.length - i - 1; j++) {
 				if (students[j].getRank() > students[j + 1].getRank()) {
+					Student temAccount = students[j + 1];
+					students[j + 1] = students[j];
+					students[j] = temAccount;
+				}
+			}
+		}
+	}
+
+//	학생총점으로 오름차순
+	public void olachog() {
+		for (int i = 0; i < students.length; i++) {
+			students[i].calculateTotal();
+		}
+		for (int i = 0; i < students.length; i++) {
+			for (int j = 0; j < students.length - i - 1; j++) {
+				if (students[j].getTot() > students[j + 1].getTot()) {
+					Student temAccount = students[j + 1];
+					students[j + 1] = students[j];
+					students[j] = temAccount;
+				}
+			}
+		}
+	}
+
+//	학생이름순으로 오름차순정렬
+	public void nameola() {
+		// calculateRank();
+		for (int i = 0; i < students.length; i++) {
+			for (int j = 0; j < students.length - i - 1; j++) {
+				if (students[j].getName().compareTo(students[j + 1].getName()) > 0) {
 					Student temAccount = students[j + 1];
 					students[j + 1] = students[j];
 					students[j] = temAccount;

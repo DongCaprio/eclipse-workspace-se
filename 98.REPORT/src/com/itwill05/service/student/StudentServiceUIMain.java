@@ -36,6 +36,8 @@ public class StudentServiceUIMain {
 				studentService.print();
 			}else if(menuNo==2) {
 				//2. 전체학생 총점으로 석차계산
+				studentService.calculateRank();
+				studentService.print();
 			}else if(menuNo==3) {
 				//3. 번호로   검색
 				System.out.print(" >>번호입력: ");
@@ -52,16 +54,31 @@ public class StudentServiceUIMain {
 				System.out.print(" >>학점입력: ");
 				String gradeStr = scanner.next();
 				char grade = gradeStr.charAt(0);
+				Student[] aPeople = studentService.returnGradeA('A');
+				for (int i = 0; i < aPeople.length; i++) {
+					aPeople[i].print();
+				}
 				
 			}else if(menuNo==5) {
 				//5. 이름으로 검색
 				
 				System.out.print(" >>이름입력: ");
 				String name = scanner.next();
+				System.out.println("5.  이름KIM 인 학생들 반환");
+				Student[] aaa = studentService.returnName(name);
+				for (int i = 0; i < aaa.length; i++) {
+					aaa[i].print();
+				}
 			}else if(menuNo==6) {
 				//6. 학생총점으로 오름차순정렬
+//				studentService.calculate();
+//				studentService.calculateRank();
+				studentService.olachog();
+				studentService.print();
 			}else if(menuNo==7) {
 				//7. 학생이름으로 오름차순정렬
+				studentService.nameola();
+				studentService.print();
 			}else if(menuNo==8) {
 				System.out.print(" >>학생정보입력(번호 이름 국어 영어 수학): ");
 				String noStr = scanner.next();
@@ -77,11 +94,12 @@ public class StudentServiceUIMain {
 				int math=Integer.parseInt(mathStr);
 				Student newStudent=new Student(no, nameStr, kor, eng, math);
 				studentService.addStudent(newStudent);
-				
+				studentService.print();
 				
 			}else if(menuNo==9) {
 				run=false;
 				System.out.println("학생성적관리프로그램을 종료합니다.");
+				return ;
 			}
 		}
 

@@ -1,19 +1,16 @@
 package com.itwill05.service.student;
 
-
-
-
 public class StudentServiceMain {
 
 	public static void main(String[] args) {
-		StudentService studentService=new StudentService();
+		StudentService studentService = new StudentService();
 		/*
 		 * 1. 전체학생총점,평균,평점계산
 		 */
 		System.out.println("1. 전체학생총점,평균,평점계산");
 		studentService.calculate();
 		studentService.print();
-		//studentService.addStudent(new Student(17, "KYE", 11, 11, 11));
+		// studentService.addStudent(new Student(17, "KYE", 11, 11, 11));
 		/*
 		 * 2. 전체학생 총점으로 석차계산
 		 */
@@ -40,25 +37,20 @@ public class StudentServiceMain {
 		 * 5. 학점A인 학생들 반환
 		 */
 		System.out.println("5. 학점A인 학생들 반환");
-	//	Student[] aPeople = 
-		studentService.returnGradeA('A');
-//		for (int i = 0; i < aPeople.length; i++) {
-//			aPeople[i].print();
-//		}
-		//오류가 뜨는데..어디인지 잘 모르겠네요
-		
+		Student[] aPeople = studentService.returnGradeA('A');
+		for (int i = 0; i < aPeople.length; i++) {
+			aPeople[i].print();
+		}
+
 		/*
 		 * 5. 이름KIM 인 학생들 반환
 		 */
 		System.out.println("5.  이름KIM 인 학생들 반환");
-//		 Student[] aaa =
-		studentService.returnName("KIM");
-//		 for (int i = 0; i < aaa.length; i++) {
-//			aaa[i].print();
-//		} 
-//		이것도 위와 마찬가지로...오류가 뜨는데
-//		혹시 출력하는 법이 틀린건가요?
-		
+		Student[] aaa = studentService.returnName("KIM");
+		for (int i = 0; i < aaa.length; i++) {
+			aaa[i].print();
+		}
+
 		/*
 		 * 6. 학생석차로 오름차순정렬
 		 */

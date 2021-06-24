@@ -60,10 +60,10 @@ public class Account {
 		System.out.printf("%s%n", "---------------------------");
 	}
 
-	@Override
-	public String toString() {
-		return "("+no+" "+owner+")";
-	}
+//	@Override
+//	public String toString() {
+//		return "("+no+" "+owner+")";
+//	}
 	public void print() {
 		System.out.printf("%d %6s %8d %5.1f %n", this.no, this.owner, this.balance, this.iyul);
 	}

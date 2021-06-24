@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class ArrayListMain {
 
@@ -31,6 +32,8 @@ public class ArrayListMain {
 		accountList.add(acc3);
 		accountList.add(acc4);
 		accountList.add(acc5);
+		
+		
 		System.out.println("# size:"+accountList.size());
 		System.out.println(">>"+accountList);
 		accountList.add(3,new Account(3334, "KIMM",9000, 0.9));
@@ -85,12 +88,35 @@ public class ArrayListMain {
 			}
 		}
 		System.out.println("****************5.계좌주이름 KING 계좌 여러개삭제[Quiz]****");
+		for (int i = 0; i < accountList.size(); i++) {
+			Account tempAccount =(Account)accountList.get(i);
+			if(tempAccount.getOwner().equals("KING")) {
+				Account removeAcc=(Account)accountList.remove(i);
+				System.out.println("remove account:"+removeAcc);
+				i--;
+			}
+		}
+		
 		
 		System.out.println("****************계좌전체출력******************");
 		for(int i=0;i<accountList.size();i++) {
 			Account tempAccount=(Account)accountList.get(i);
 			tempAccount.print();
 		}
+		
+		System.out.println("======set보고오기=============iteration[전체출력]=====================");
+		Iterator accountIterator = accountList.iterator();
+		while (accountIterator.hasNext()) {
+			Account tempAccount = (Account) accountIterator.next();
+			tempAccount.print();
+		}
+		
+		
+		
+		
+		
+		
 	}
-
 }
+
+
