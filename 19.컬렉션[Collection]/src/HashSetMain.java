@@ -12,7 +12,7 @@ public class HashSetMain {
 		Account acc2=new Account(2222, "KING",23000,0.1);
 		Account acc3=new Account(3333, "KING",89000,0.2);
 		Account acc4=new Account(4444, "YONG",12000,0.5);
-		Account acc5=new Account(5555, "SANG",99000,0.8);https://search.naver.com/search.naver?query=%EA%B5%AD%EB%B9%84%EC%A7%80%EC%9B%90%20%ED%9B%84%EA%B8%B0&nso=&where=view&sm=tab_viw.all&mode=normal
+		Account acc5=new Account(5555, "SANG",99000,0.8);//https://search.naver.com/search.naver?query=%EA%B5%AD%EB%B9%84%EC%A7%80%EC%9B%90%20%ED%9B%84%EA%B8%B0&nso=&where=view&sm=tab_viw.all&mode=normal
 		
 		System.out.println("-----------1. add----------------");
 		accountSet.add(acc1);
