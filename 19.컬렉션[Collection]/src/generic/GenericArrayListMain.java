@@ -67,7 +67,7 @@ public class GenericArrayListMain {
 		nameList.add("UIM");
 		nameList.add("TIM");
 		nameList.add("KIM");
-		nameList.add("KIM");
+		nameList.add("VIM");
 		System.out.println("#nameList size:"+nameList.size());
 		System.out.println(nameList);
 		nameList.add(3,"KKK");
@@ -78,7 +78,8 @@ public class GenericArrayListMain {
 		System.out.println("remove name:"+removeName);
 		System.out.println("#nameList size:"+nameList.size());
 		System.out.println(nameList);
-		System.out.println("-----------2.remove(Object o)---------");
+		System.out.println("-----------2.remove(Object o)---------######################");
+		System.out.println("#nameList size:"+nameList.size());
 		boolean isRemove = nameList.remove(new String("VIM"));
 		System.out.println("#nameList size:"+nameList.size());
 		System.out.println(nameList);

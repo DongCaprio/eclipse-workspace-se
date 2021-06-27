@@ -42,6 +42,9 @@ public class GenericHashMapMain {
 			Car tempCar=carMap.get(key);
 			tempCar.print();
 		}
+//		for(String i : carMap.keySet()) {
+//			System.out.println(i);
+//		}
 		System.out.println("2.입차");
 		Car c1=new Car("2389", 3);
 		carMap.put(c1.getNo(), c1);

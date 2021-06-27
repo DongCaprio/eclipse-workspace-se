@@ -32,7 +32,9 @@ public class HashMapMain {
 		removeCar.print();
 		System.out.println(carMap);
 		System.out.println("map size:"+carMap.size());
+		
 		System.out.println("==============업무실행===================");
+		
 		System.out.println("1. 전체차량출력");
 		Car.headerPrint();
 		Iterator KeyIter = carMap.keySet().iterator();
@@ -41,9 +43,6 @@ public class HashMapMain {
 			Car tempCar = (Car)carMap.get(key);
 			tempCar.print();
 		}
-		
-		
-		
 		
 		System.out.println("2. 입차");
 		carMap.put("3243", new Car("3243",6));
@@ -61,16 +60,6 @@ public class HashMapMain {
 			}
 		}
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		System.out.println("5. 3243번 차량 12시 출차");
 		getCar=(Car)carMap.get("3243");
 		getCar.setOutTime(12);
@@ -79,11 +68,6 @@ public class HashMapMain {
 		carMap.remove("3243");
 		System.out.println("map size:"+carMap.size());
 		System.out.println(carMap);
-		
-		
-		
-		
-		
 		
 		System.out.println("####################iteration[전체출력]##################");
 		Set keySet = carMap.keySet();

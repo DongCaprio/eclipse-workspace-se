@@ -5,7 +5,7 @@ import java.util.Iterator;
 public class HashSetMain {
 
 	public static void main(String[] args) {
-		HashSet accountSet=new HashSet(); 
+		HashSet<Account> accountSet=new HashSet<Account>(); 
 		System.out.println("# set size:"+accountSet.size());
 		
 		Account acc1=new Account(1111, "BING",33000,0.5);
@@ -43,11 +43,11 @@ public class HashSetMain {
 	
 		System.out.println("-------------iteration[전체출력]----------------------------");
 
-		Iterator accountIter = accountSet.iterator();
+		Iterator<Account> accountIter = accountSet.iterator();
 		System.out.println(accountIter);
 		
 		while(accountIter.hasNext()) {
-			Account tempAccount =(Account)accountIter.next();
+			Account tempAccount =accountIter.next();
 			tempAccount.print();
 		}
 		

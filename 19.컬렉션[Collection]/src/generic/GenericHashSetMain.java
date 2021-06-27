@@ -35,6 +35,13 @@ public class GenericHashSetMain {
 		System.out.println("#set size:"+accountSet.size());
 		System.out.println(accountSet);
 		System.out.println("####################iteration[전체출력]######################");
+		for (Account aa : accountSet) {
+			aa.print();
+		}
+		for (Account i : accountSet) {
+			System.out.print(i.getOwner()+" ");
+		}
+		System.out.println("------------------------------");
 		Iterator<Account> accountIterator=accountSet.iterator();
 		while (accountIterator.hasNext()) {
 			Account account = accountIterator.next();
@@ -51,7 +58,7 @@ public class GenericHashSetMain {
 		System.out.println("---------1.add-----------");
 		System.out.println(nameSet);
 		System.out.println(">> KIM추가");
-		nameSet.add("KIM");
+		System.out.println(nameSet.add("KIM")); // set에서는 중복의 추가가 아예 안된다.
 		System.out.println(nameSet);
 		System.out.println("----------2.remove---------");
 		nameSet.remove("KIM");
