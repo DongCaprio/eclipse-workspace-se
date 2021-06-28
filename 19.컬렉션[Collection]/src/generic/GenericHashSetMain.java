@@ -2,6 +2,7 @@ package generic;
 
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.Random;
 import java.util.Set;
 
 public class GenericHashSetMain {
@@ -71,9 +72,26 @@ public class GenericHashSetMain {
 		}
 		System.out.println();
 		System.out.println("<<<<<<<<<<<<<<<<<<<<Wrapper>>>>>>>>>>>>>>>>>>>>>");
+		Set<Integer> lottoSet = new HashSet<Integer>();
+		lottoSet.add(new Integer(34));
+		lottoSet.add(12);
+		lottoSet.add(22);
+		lottoSet.add(41);
+		lottoSet.add(11);
+		System.out.println("-------------1. add--------------");
+		System.out.println("#size:"+lottoSet.size());
+		System.out.println(lottoSet);
+		lottoSet.add(34);
+		System.out.println("-----------------2. remove-------------------");
+		lottoSet.remove(34);
+		System.out.println("#size:"+lottoSet.size());
+		System.out.println(lottoSet);
 		
-		
-		
+		Set<Integer> lotto=new HashSet<Integer>();
+		while (lotto.size() < 6) {
+			lotto.add((int)(Math.random()*45)+1);
+		}
+		System.out.println(">>lotto:"+lotto);
 		
 	}
 

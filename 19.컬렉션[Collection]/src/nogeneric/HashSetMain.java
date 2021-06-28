@@ -1,3 +1,4 @@
+package nogeneric;
 import java.nio.file.spi.FileSystemProvider;
 import java.util.HashSet;
 import java.util.Iterator;

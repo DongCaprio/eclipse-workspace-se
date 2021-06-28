@@ -1,6 +1,6 @@
 package generic;
 
-public class Account {
+public class Account implements Comparable<Account>{
 	/*
 	 * 멤버필드
 	 */
@@ -102,6 +102,16 @@ public class Account {
 
 	public void setBalance(int balance) {
 		this.balance = balance;
+	}
+	@Override
+	public int compareTo(Account nextAccount) {
+//		if(this.owner.compareTo(nextAccount.getOwner()) >0) {
+//			return 1; //숫자는 관계없다 236을 하든 999를 하든 대신        중요!!!
+//					  //양수이면 바꾸라는소리이고 음수이면 바꾸지 말라는 말이다. 
+//		}else return -1;
+		if(this.balance >nextAccount.getBalance()) {
+			return 1;
+		} else return -1;
 	}
 
 }

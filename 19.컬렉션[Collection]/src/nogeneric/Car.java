@@ -1,3 +1,4 @@
+package nogeneric;
 public class Car {
 	
 	

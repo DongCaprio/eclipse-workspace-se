@@ -12,12 +12,10 @@ public class CarServiceMain {
 		carService.ipCha(new Car("6672",9));
 		carService.ipCha(new Car("9876",10));
 		boolean isSuccess=carService.ipCha(new Car("2344",10));
-		if(!isSuccess) {
-			System.out.println("만차이거나 번호가중복되었습니다.");
-		}
+		System.out.println(isSuccess);
 		
 		System.out.println("1.CarService객체야 전체차량출력해줘");
-		
+		carService.allPrint();
 		System.out.println("2.CarService객체야 전체주차구획수반환해줘");
 		System.out.println("3.CarService객체야 주차가능주차구획수반환해줘");
 		System.out.println("4.CarService객체야 차량번호(4567번) 인자로줄께  차객체한대 참조변수반환해줘");

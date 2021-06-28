@@ -1,3 +1,4 @@
+package nogeneric;
 import java.util.ArrayList;
 import java.util.Iterator;
 
