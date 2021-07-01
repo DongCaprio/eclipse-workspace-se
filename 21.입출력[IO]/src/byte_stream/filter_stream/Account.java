@@ -1,8 +1,11 @@
 package byte_stream.filter_stream;
+
+import java.io.Serializable;
+
 /*
  * 은행에서 계좌객체를 생성하기위한 클래스
  */
-public class Account {
+public class Account implements Serializable{
 	/*
 	 * 멤버필드
 	 */

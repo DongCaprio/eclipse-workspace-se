@@ -18,7 +18,7 @@ public class FileInputStreamMain {
 		readByte = fis.read();
 		System.out.println("2. byte:"+Integer.toBinaryString(readByte));
 		readByte = fis.read();
-		System.out.println("2. byte:"+Integer.toBinaryString(readByte));
+		System.out.println("3. byte:"+Integer.toBinaryString(readByte));
 		
 		while(true) {
 			readByte = fis.read();

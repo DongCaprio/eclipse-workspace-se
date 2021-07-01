@@ -17,7 +17,7 @@ public class FileReaderWriterMain {
 		      should override this method.
 		 */
 		
-		fw.write(44456);
+		fw.write(88);
 		fw.write('A');
 		fw.write('김');
 		for (int i = 0; i < 65536; i++) {
@@ -59,6 +59,7 @@ public class FileReaderWriterMain {
 				lineCount++;
 			}
 		}
+		
 		fr.close();
 		System.out.println();
 		System.out.println("FileReader.read()-->"+lineCount+ "라인읽음");;

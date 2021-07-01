@@ -27,6 +27,9 @@ public class BufferedReaderPrintWriterCopyMain {
 		System.out.println("1.readLine:"+readLine);
 		readLine=br.readLine();
 		System.out.println("2.readLine:"+readLine);
+		System.out.println("2.readLine:"+readLine);
+		readLine=br.readLine();
+		System.out.println("4.readLine:"+readLine);
 		int lineNo=0;
 		while(true) {
 			readLine = br.readLine();

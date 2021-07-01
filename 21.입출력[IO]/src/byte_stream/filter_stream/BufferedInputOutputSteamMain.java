@@ -14,7 +14,7 @@ public class BufferedInputOutputSteamMain {
 		bos.write(0b0000001110010);
 		bos.write(89);
 		bos.write(23);
-		for (int i = 0; i < 256; i++) {
+		for (int i = 0; i < 280; i++) {
 			bos.write(i);
 		}
 		bos.flush();
@@ -23,9 +23,10 @@ public class BufferedInputOutputSteamMain {
 		BufferedInputStream bis = new BufferedInputStream(new FileInputStream("bufferedOut.dat"));
 		while (true) {
 			int readByte = bis.read();
+			System.out.print(readByte+"*");
 			if (readByte == -1)
 				break;
-			System.out.print((char)readByte);
+//			System.out.print((char)readByte);
 		}
 		bis.close();
 		

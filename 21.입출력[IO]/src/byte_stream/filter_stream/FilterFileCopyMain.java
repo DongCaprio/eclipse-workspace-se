@@ -17,6 +17,7 @@ public class FilterFileCopyMain {
 		long startTime = System.currentTimeMillis();
 		while (true) {
 			int readByte = bis.read();
+			System.out.println(readByte);
 			if (readByte == -1)
 				break;
 			bos.write(readByte);

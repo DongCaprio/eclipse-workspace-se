@@ -18,6 +18,7 @@ public class FileReaderWriterCopyMain {
 			}else if(readChar=='-') {
 				fw.write(readChar);
 				fw.write("page ");
+				
 			}else {
 				fw.write(readChar);
 			}

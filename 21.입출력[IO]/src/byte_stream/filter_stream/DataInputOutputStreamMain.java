@@ -12,8 +12,8 @@ public class DataInputOutputStreamMain {
 		/*
 		 * 자바의 기본데이타를 출력 스트림에 쉽게쓸수있도록하는 필터클래스
 		 */
-		FileOutputStream fos= new FileOutputStream("dataOut.dat");
-		DataOutputStream dos = new DataOutputStream(fos);
+//		FileOutputStream fos= new FileOutputStream("dataOut.dat");
+		DataOutputStream dos = new DataOutputStream(new FileOutputStream("dataOut.dat"));
 		int intData = 2147483647;
 		/*
 		 *      01111111|11111111|11111111|11111111
@@ -33,7 +33,7 @@ public class DataInputOutputStreamMain {
 //		fos.write(intData);
 		
 		dos.writeInt(intData);
-		dos.writeByte(127);
+		dos.writeByte(111);
 		dos.writeBoolean(true);
 		dos.writeDouble(3.141592);
 		dos.writeChar('가');
