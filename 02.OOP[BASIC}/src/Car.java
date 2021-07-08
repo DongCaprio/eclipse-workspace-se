@@ -16,6 +16,7 @@ public class Car {
 	/**
 	 * 차량번호저장필드
 	 */
+	
 	public String no;//차량번호
 	public int inTime;//입차시간
 	public int outTime;//출차시간

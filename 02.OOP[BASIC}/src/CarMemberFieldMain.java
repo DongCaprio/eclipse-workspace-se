@@ -15,7 +15,7 @@ public class CarMemberFieldMain {
 		// 차 객체의 no멤버필드에 스트링값 대입
 		car0.no = "1234";
 		// 차 객체의 inTime멤버필드에 스트링값 대입
-		car0.inTime = 12;
+		car0.inTime = 12; 
 
 		// 2. 16시에 car0차량 출차(=1234차량 출차)한 상황
 		
