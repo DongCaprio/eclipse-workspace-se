@@ -16,6 +16,7 @@ public class AccountEncapsulationMain {
 		account1.print();
 		account1.deposit(33000);
 		account1.print();
+
 		
 		/*
 		<<The field Account.balance is not visible >>
