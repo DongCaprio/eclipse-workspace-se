@@ -58,7 +58,7 @@ public class GenericArrayMainPractice {
 		namem.remove("w");
 		System.out.println(namem);
 		namem.remove("w");
-		System.out.println(namem);
+		System.out.println(namem); //앞에요소의 w가 먼저 사라진다
 		
 		namem.add(3);
 		namem.add(2);

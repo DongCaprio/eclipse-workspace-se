@@ -94,14 +94,14 @@ public class CarService {
 		
 		int num = 0;
 		for (int i = 0; i < carArray.length; i++) {
-			if (carArray[i] !=null && carArray[i].getInTime()>=8) {
+			if (carArray[i] !=null && carArray[i].getInTime()>=clock) {
 				num++;
 			}
 		}
 		
 		carr = new Car[num];
 		for (int i = 0, j= 0; i < carArray.length; i++) {
-			if (carArray[i] !=null && carArray[i].getInTime()>=8) {
+			if (carArray[i] !=null && carArray[i].getInTime()>=clock) {
 				carr[j] = carArray[i];
 				j++;
 			}

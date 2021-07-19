@@ -13,7 +13,7 @@ public class ControlPriorityLowerUpperMain {
 		System.out.println("ControlPriorityUpperThread--> "+ut.getPriority());
 		System.out.println("ControlPriorityLowerThread--> "+lt.getPriority());
 		
-		ut.setPriority(10);
+		ut.setPriority(9);
 		lt.setPriority(1);
 		
 		ut.start();

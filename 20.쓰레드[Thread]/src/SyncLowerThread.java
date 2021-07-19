@@ -5,7 +5,7 @@ public class SyncLowerThread extends Thread{
 	}
 	@Override
 	public void run() {
-		while(true) {
+		for(int i =0 ;i<100; i++){
 //			System.out.println("\n--> Lowerr Thread 동기화블록 실행전");
 			/****************************/
 			synchronized (monitorObject) {

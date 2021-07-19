@@ -81,6 +81,7 @@ public class GenericArrayListMain {
 		System.out.println("-----------2.remove(Object o)---------######################");
 		System.out.println("#nameList size:"+nameList.size());
 		boolean isRemove = nameList.remove(new String("VIM"));
+		System.out.println(isRemove);
 		System.out.println("#nameList size:"+nameList.size());
 		System.out.println(nameList);
 		/*
@@ -111,7 +112,8 @@ public class GenericArrayListMain {
 		
 		int score3 = scoreList.get(3);//generic-->auto unboxing
 		System.out.println("scoreList.get(3)-->"+score3);
-		
+		System.out.println("---------");
+		System.out.println(scoreList.get(3));
 		System.out.println("---------------3.set------------");
 		scoreList.set(3,100);
 		System.out.println(scoreList);

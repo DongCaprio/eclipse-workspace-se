@@ -31,6 +31,7 @@ public class CollectionsUtilMain {
 		System.out.println("--------------sort------------------");
 		System.out.println(intList);
 		Collections.sort(intList);
+		Collections.sort(intList2);
 		System.out.println(intList);
 		System.out.println(nameList);
 		Collections.sort(nameList);
