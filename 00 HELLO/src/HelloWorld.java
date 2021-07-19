@@ -9,6 +9,7 @@ public class HelloWorld {
 		System.out.println("안녕자바!!");
 		System.out.println("안녕자바!!");
 		System.out.println("안녕자바!!");
+		System.out.println("깃허브야 왜안되는거니");
 	}
 
 }
