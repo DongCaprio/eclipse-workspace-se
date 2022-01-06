@@ -43,6 +43,13 @@
         document.querySelector('body').style.background = 'skyblue';
         document.querySelector('body').style.color = 'orange';
         document.querySelector('#night_day').value = 'button1';
+
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist){
+          alist[i].style.color = 'powderblue';
+          i++;
+        }
     }
       ">
       <input id="night_day" type="button" name="night_day" value="button1" onclick="
